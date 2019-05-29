@@ -1,9 +1,9 @@
 package dao;
 /**
  * 
- *   ´æÔÚÌ«¶àµÄÄ£°å´úÂë
+ *   å­˜åœ¨å¤ªå¤šçš„æ¨¡æ¿ä»£ç äº†
  *
- * ÌáÈ¡³öÀ´
+ * æå–å‡ºæ¥
  * 
  */
 
@@ -23,9 +23,9 @@ public class BaseDao {
 	Connection conn;
 	PreparedStatement ps;
 	ResultSet rs;
-	//Í¨ÓÃÔöÉ¾¸Ä
-	//±íºÍÔöÉ¾¸ÄÓï·¨  sql
-	//¸³Öµ²ÎÊıµÄ¸öÊıºÍÀàĞÍ²»Ò»Ñù
+	//é€šç”¨å¢åˆ æ”¹
+	//è¡¨å’Œå¢åˆ æ”¹è¯­æ³•  sql
+	//èµ‹å€¼å‚æ•°çš„ä¸ªæ•°å’Œç±»å‹ä¸ä¸€æ ·
 	public int executeUpdate(String sql,Object...params){
 		int rows=0;
 		try {
@@ -77,7 +77,7 @@ public class BaseDao {
 					lists.add(t);
 				}
 			conn.commit();
-			System.out.println("ÊÂÎñÒÑ¾­Ìá½»");
+			System.out.println("äº‹åŠ¡å·²ç»æäº¤");
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				
